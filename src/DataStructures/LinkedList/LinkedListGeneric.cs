@@ -1,3 +1,28 @@
+// This example here makes use of what is called
+// generic types
+// Instead of creating a Linked List class for all the various
+// types this accepts a type as an argument when you are
+// creating an instance of the class
+
+// Non generic example:
+// LinkedList list = new LinkedList();
+
+// Generic example:
+// LinkedList<string> = new LinkedList<string>();
+
+// Note the extra parameter in the second example
+// we are passing in a type as a parameter, in this case a string
+
+// This avoids a lot of code duplication
+
+// If you look at the code below you will see that
+// there is quite a lot of <T> and "T" there
+// The "T" are placed where you normally would use a 
+// concrete type like string, int, boolean, etc
+// While the <T> are placed more like functions arguments
+// and they are in fact acting quite similare to function
+// arguments, except for typing
+
 namespace DataStructures
 {
     class LinkedListGenericNode<T>
