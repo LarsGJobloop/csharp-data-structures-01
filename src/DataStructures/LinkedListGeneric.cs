@@ -1,9 +1,9 @@
 namespace DataStructures
 {
-    class LinkedListGenericNode <T>
+    class LinkedListGenericNode<T>
     {
         public T Value;
-        public LinkedListGenericNode <T>? Next;
+        public LinkedListGenericNode<T>? Next;
 
         public LinkedListGenericNode(T value)
         {
@@ -12,10 +12,10 @@ namespace DataStructures
         }
     }
 
-    public class LinkedListGeneric <T>
+    public class LinkedListGeneric<T>
     {
-        private LinkedListGenericNode <T>? head;
-        private LinkedListGenericNode <T>? current;
+        private LinkedListGenericNode<T>? head;
+        private LinkedListGenericNode<T>? current;
 
         public LinkedListGeneric()
         {
@@ -25,7 +25,7 @@ namespace DataStructures
 
         public void Add(T newValue)
         {
-            LinkedListGenericNode <T> newNode = new LinkedListGenericNode <T>(newValue);
+            LinkedListGenericNode<T> newNode = new LinkedListGenericNode<T>(newValue);
 
             if (head == null)
             {
@@ -34,7 +34,7 @@ namespace DataStructures
             }
             else
             {
-                LinkedListGenericNode <T> currentNode = head;
+                LinkedListGenericNode<T> currentNode = head;
 
                 while (currentNode.Next != null)
                 {
@@ -76,7 +76,7 @@ namespace DataStructures
             {
                 System.Console.WriteLine("Printing all nodes");
 
-                LinkedListGenericNode <T>? currentView = head;
+                LinkedListGenericNode<T>? currentView = head;
 
                 while (currentView != null)
                 {
@@ -98,7 +98,7 @@ namespace DataStructures
         static public void Run()
         {
             // Create a new instance of the linked list
-            DataStructures.LinkedListGeneric <int> list = new DataStructures.LinkedListGeneric <int>();
+            DataStructures.LinkedListGeneric<int> list = new DataStructures.LinkedListGeneric<int>();
 
             // Should be empty
             list.PrintCurrent();
