@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+class Program
+{
+    static public void Main()
+    {
+        System.Console.WriteLine("Starting Program");
+
+        System.Console.WriteLine("\nRunning linked list string");
+        DataStructures.LinkedListStringTest.Run();
+
+    }
+}
