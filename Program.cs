@@ -1,4 +1,4 @@
-class Program
+﻿class Program
 {
     static public void Main()
     {
@@ -7,5 +7,7 @@ class Program
         System.Console.WriteLine("\nRunning linked list string");
         DataStructures.LinkedListStringTest.Run();
 
+        System.Console.WriteLine("\nRunning linked list generic");
+        DataStructures.LinkedListGenericTest.Run();
     }
 }
